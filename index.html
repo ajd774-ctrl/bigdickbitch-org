@@ -3,19 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The website for this domain is being prepared.">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
-    <title>Welcome</title>
+    <meta name="description" content="Independent, read-only information about the current public domain parking configuration.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; connect-src https://web-api.aws.parking.godaddy.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+    <title>Domain information</title>
     <link rel="stylesheet" href="styles.css">
     <script src="site.js" defer></script>
   </head>
   <body>
     <main>
       <div class="mark" aria-hidden="true">●</div>
-      <p class="eyebrow">A new site is on its way</p>
-      <h1 id="domain">Welcome</h1>
-      <p class="message">This website is being prepared. Please check back soon.</p>
+      <p class="eyebrow">Current public configuration</p>
+      <h1 id="domain">bigdickbitch.org</h1>
+      <p class="message" id="status" role="status" aria-live="polite">Loading domain information…</p>
+      <dl class="details">
+        <div><dt>Domain status</dt><dd id="domain-status">—</dd></div>
+        <div><dt>Page type</dt><dd id="page-type">—</dd></div>
+        <div><dt>Related terms</dt><dd id="keywords">—</dd></div>
+      </dl>
+      <a class="action" id="domain-link" hidden target="_blank" rel="noopener noreferrer">Open registrar page</a>
     </main>
-    <footer>© <span id="year"></span> <span id="footer-domain"></span></footer>
+    <footer>Independent, read-only summary of public domain configuration. Not affiliated with GoDaddy.</footer>
   </body>
 </html>
